@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ISchool - Rede Social Escolar</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>ISchool</h1>
+    <p>Rede Social Escolar para partilha de conhecimento</p>
+  </header>
+
+  <main>
+    <section id="login">
+      <h2>Entrar</h2>
+      <input type="text" placeholder="Nome de utilizador">
+      <input type="password" placeholder="Palavra-passe">
+      <button onclick="entrar()">Entrar</button>
+    </section>
+
+    <section id="feed" style="display:none;">
+      <h2>Feed de Publicações</h2>
+      <textarea id="post" placeholder="O que estás a pensar?"></textarea>
+      <button onclick="publicar()">Publicar</button>
+      <div id="publicacoes"></div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
